@@ -3,9 +3,10 @@ angular.module('templates-dist', ['templates/emoji-button-bootstrap.html', 'temp
 angular.module("templates/emoji-button-bootstrap.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/emoji-button-bootstrap.html",
     "<i class=\"emoji-picker emoji-smile\"\n" +
-    "   popover-template=\"'templates/emoji-popover-bootstrap.html'\"\n" +
-    "   popover-placement=\"{{ !placement && 'left' || placement }}\"\n" +
-    "   popover-title=\"{{ title }}\"></i>\n" +
+    "   uib-popover-template=\"'templates/emoji-popover-bootstrap.html'\"\n" +
+    "   uib-popover-placement=\"{{ !placement && 'left' || placement }}\"\n" +
+    "   popover-trigger=\"outsideClick\"\n" +
+    "   uib-popover-title=\"{{ title }}\"></i>\n" +
     "");
 }]);
 
